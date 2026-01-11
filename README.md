@@ -8,7 +8,7 @@ An end-to-end **Sentiment Analysis system** that compares three different NLP ap
 
 ## 🚀 Live Demo
 
-🔗 **
+🔗 *https://tweets-sentiment-analysis-hnmz8eryhpowepn6mskb8w.streamlit.app/*
 
 ---
 
