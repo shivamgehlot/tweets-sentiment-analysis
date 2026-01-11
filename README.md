@@ -193,17 +193,4 @@ Software Engineering | Machine Learning | NLP
 
 This project is for **educational and portfolio purposes**.
 
----
-
-### ✅ What to do now
-
-1. Save this as `README.md`
-2. Run:
-
-```bash
-git add README.md
-git commit -m "Add project README"
-git push
-```
-
 
