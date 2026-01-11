@@ -1,0 +1,10 @@
+﻿models/
+venv/
+__pycache__/
+*.pkl
+*.h5
+*.keras
+*.bin
+*.safetensors
+*.pyc
+.ipynb_checkpoints/
