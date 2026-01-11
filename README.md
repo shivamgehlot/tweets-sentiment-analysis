@@ -160,6 +160,7 @@ streamlit run app.py
 * joblib
 * numpy
 * pandas
+* huggingface_hub
 
 ---
 
