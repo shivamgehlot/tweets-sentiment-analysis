@@ -1,26 +1,32 @@
-🧠 Sentiment Analysis Web App
+# 🧠 Sentiment Analysis Web App
 
-TF-IDF | LSTM | BERT (Fine-Tuned)
+**TF-IDF | LSTM | BERT (Fine-Tuned)**
 
-An end-to-end Sentiment Analysis system that compares three different NLP approaches — Traditional ML, Deep Learning, and Transformer-based models — deployed using Streamlit.
+An end-to-end **Sentiment Analysis system** that compares three different NLP approaches — **Traditional ML**, **Deep Learning**, and **Transformer-based models** — deployed using **Streamlit**.
 
-🚀 Live Demo
+---
 
-🔗 ()
+## 🚀 Live Demo
 
-📌 Project Overview
+🔗 **
 
-This project performs binary sentiment classification (Positive / Negative) on text data using:
+---
 
-TF-IDF + Logistic Regression
+## 📌 Project Overview
 
-LSTM Neural Network
+This project performs **binary sentiment classification (Positive / Negative)** on text data using:
 
-Fine-tuned BERT (bert-base-uncased)
+1. **TF-IDF + Logistic Regression**
+2. **LSTM Neural Network**
+3. **Fine-tuned BERT (bert-base-uncased)**
 
-The goal is to compare accuracy, performance, and inference behavior across different NLP paradigms.
+The goal is to **compare accuracy, performance, and inference behavior** across different NLP paradigms.
 
-🏗️ Architecture
+---
+
+## 🏗️ Architecture
+
+```
 User Input
    │
    ├── TF-IDF + Logistic Regression
@@ -29,50 +35,56 @@ User Input
         │
         ▼
    Sentiment Prediction + Confidence
+```
 
-🧪 Models Used
-1️⃣ TF-IDF + Logistic Regression
+---
 
-Feature extraction using TF-IDF
+## 🧪 Models Used
 
-Classifier: Logistic Regression
+### 1️⃣ TF-IDF + Logistic Regression
 
-Fast inference, lightweight
+* Feature extraction using **TF-IDF**
+* Classifier: **Logistic Regression**
+* Fast inference, lightweight
 
-2️⃣ LSTM (Deep Learning)
+### 2️⃣ LSTM (Deep Learning)
 
-Tokenization + padding (max_len = 360)
+* Tokenization + padding (`max_len = 360`)
+* Embedding + LSTM layers
+* Better contextual understanding than TF-IDF
 
-Embedding + LSTM layers
+### 3️⃣ BERT (Transformer)
 
-Better contextual understanding than TF-IDF
+* **bert-base-uncased**
+* Fine-tuned using Hugging Face `Trainer`
+* Highest accuracy, context-aware
 
-3️⃣ BERT (Transformer)
+---
 
-bert-base-uncased
+## 📊 Training Results (Example)
 
-Fine-tuned using Hugging Face Trainer
+| Model  | Validation Accuracy |
+| ------ | ------------------- |
+| TF-IDF | ~83%                |
+| LSTM   | ~84%                |
+| BERT   | ~86%                |
 
-Highest accuracy, context-aware
+---
 
-📊 Training Results (Example)
-Model	Validation Accuracy
-TF-IDF	~83%
-LSTM	~84%
-BERT	~86%
-🖥️ Web Application (Streamlit)
+## 🖥️ Web Application (Streamlit)
 
 Features:
 
-Single text input
+* Single text input
+* Real-time predictions from **all three models**
+* Confidence score display
+* Clean UI for comparison
 
-Real-time predictions from all three models
+---
 
-Confidence score display
+## 📁 Project Structure
 
-Clean UI for comparison
-
-📁 Project Structure
+```
 tweets-sentiment-analysis/
 │
 ├── app.py                  # Streamlit app
@@ -85,85 +97,113 @@ tweets-sentiment-analysis/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+```
 
-⚠️ Important Note About Models
+---
 
-Trained models are NOT included in this repository
+## ⚠️ Important Note About Models
+
+> **Trained models are NOT included in this repository**
 
 Reason:
 
-Large file sizes
+* Large file sizes
+* GitHub limitations
+* Best practices
 
-GitHub limitations
+### Models are loaded from:
 
-Best practices
+* Local storage (development)
+* Hugging Face Hub (deployment)
 
-Models are loaded from:
+---
 
-Local storage (development)
+## 🛠️ Installation & Setup
 
-Hugging Face Hub (deployment)
+### 1️⃣ Clone repository
 
-🛠️ Installation & Setup
-1️⃣ Clone repository
+```bash
 git clone https://github.com/shivamgehlot/tweets-sentiment-analysis.git
 cd tweets-sentiment-analysis
+```
 
-2️⃣ Create virtual environment
+### 2️⃣ Create virtual environment
+
+```bash
 python -m venv venv
 venv\Scripts\activate
+```
 
-3️⃣ Install dependencies
+### 3️⃣ Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-4️⃣ Run Streamlit app
+### 4️⃣ Run Streamlit app
+
+```bash
 streamlit run app.py
+```
 
-📦 Dependencies
+---
 
-Python 3.9+
+## 📦 Dependencies
 
-streamlit
+* Python 3.9+
+* streamlit
+* scikit-learn
+* tensorflow
+* torch
+* transformers
+* safetensors
+* joblib
+* numpy
+* pandas
 
-scikit-learn
+---
 
-tensorflow
+## 🎯 Key Learnings
 
-torch
+* Difference between traditional ML, DL, and transformer models
+* Model deployment considerations
+* Managing large ML artifacts
+* Streamlit deployment workflow
+* Hugging Face Transformers usage
 
-transformers
+---
 
-safetensors
+## 🧑‍💻 Author
 
-joblib
-
-numpy
-
-pandas
-
-🎯 Key Learnings
-
-Difference between traditional ML, DL, and transformer models
-
-Model deployment considerations
-
-Managing large ML artifacts
-
-Streamlit deployment workflow
-
-Hugging Face Transformers usage
-
-🧑‍💻 Author
-
-Shivam Gehlot
+**Shivam Gehlot**
 Software Engineering | Machine Learning | NLP
 
-🔗 GitHub: https://github.com/shivamgehlot
+🔗 GitHub: [https://github.com/shivamgehlot](https://github.com/shivamgehlot)
 
-⭐ Future Improvements
-Optimize BERT inference
-Add multilingual support
+---
 
-📜 License
+## ⭐ Future Improvements
 
-This project is for educational and portfolio purposes.
+* Optimize BERT inference
+* Add multilingual support
+
+---
+
+## 📜 License
+
+This project is for **educational and portfolio purposes**.
+
+---
+
+### ✅ What to do now
+
+1. Save this as `README.md`
+2. Run:
+
+```bash
+git add README.md
+git commit -m "Add project README"
+git push
+```
+
+
