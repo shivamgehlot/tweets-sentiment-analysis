@@ -7,4 +7,4 @@ tensorflow
 torch
 transformers
 safetensors
-huggingfase_hub
+huggingface_hub
